@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
-df_unemployment = pd.read_csv("https://www.kaggleusercontent.com/datasets/gokulrajkmv/unemployment-in-india/file")
+df_unemployment = pd.read_csv("Unemployment in India.csv")
 plt.figure(figsize=(10, 5))
 sns.lineplot(x=df_unemployment['Date'], y=df_unemployment['Estimated Unemployment Rate'])
 plt.title('Unemployment Rate Over Time')
